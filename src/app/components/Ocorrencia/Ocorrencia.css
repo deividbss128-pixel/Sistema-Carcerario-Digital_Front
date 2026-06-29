@@ -1,0 +1,78 @@
+.ocorrencia-container {
+  padding: 20px;
+  background-color: #1e1e24;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.header-tela h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #e74c3c;
+}
+
+.header-tela p {
+  color: #aaa;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
+
+.tabela-wrapper {
+  background: #2c2c35;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.tabela-sistema {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabela-sistema th, .tabela-sistema td {
+  padding: 15px;
+  border-bottom: 1px solid #3d3d4a;
+}
+
+.tabela-sistema th {
+  background-color: #25252d;
+  color: #e74c3c;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tabela-sistema tbody tr:hover {
+  background-color: #343440;
+}
+
+.coluna-descricao {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge-info {
+  background: #3498db;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.badge-link {
+  background: #f1c40f;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sem-dados {
+  text-align: center;
+  color: #888;
+  padding: 30px !important;
+}

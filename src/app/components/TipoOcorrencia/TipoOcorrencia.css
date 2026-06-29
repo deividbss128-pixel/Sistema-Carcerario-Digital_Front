@@ -1,0 +1,61 @@
+.tipo-ocorrencia-container {
+  padding: 24px;
+  background-color: #1e1e24;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.header-tela h2 {
+  margin: 0;
+  font-size: 26px;
+  color: #3498db; /* Azul para diferenciar telas de parametrização */
+}
+
+.header-tela p {
+  color: #8a8a9e;
+  margin: 6px 0 24px 0;
+  font-size: 14px;
+}
+
+.tabela-wrapper {
+  background: #2c2c35;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tabela-sistema {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabela-sistema th, .tabela-sistema td {
+  padding: 16px;
+  border-bottom: 1px solid #3d3d4a;
+}
+
+.tabela-sistema th {
+  background-color: #25252d;
+  color: #3498db;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+}
+
+.tabela-sistema tbody tr:hover {
+  background-color: #343440;
+}
+
+.coluna-nome {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.sem-dados {
+  text-align: center;
+  color: #6a6a7a;
+  padding: 40px !important;
+  font-style: italic;
+}

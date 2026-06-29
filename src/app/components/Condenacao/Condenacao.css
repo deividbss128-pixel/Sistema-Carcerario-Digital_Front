@@ -1,0 +1,79 @@
+/* ESTRUTURA GERAL DA TELA */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* BARRA LATERAL (SIDEBAR) */
+.sidebar {
+  width: 260px;
+  background-color: #1e293b; /* Azul escuro sólido */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo-presidio {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 15px;
+}
+
+.logo-presidio h2 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.logo-presidio small {
+  color: #94a3b8;
+}
+
+/* LINKS DO MENU */
+.menu-canais {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-item {
+  color: #cbd5e1;
+  text-decoration: none; /* REMOVE O SUBLINHADO PADRÃO DE LINK */
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+  display: block; /* FAZ O LINK OCUPAR A LINHA TODA */
+}
+
+/* EFEITO DE PASSAR O MOUSE */
+.menu-item:hover {
+  background-color: #334155;
+  color: white;
+}
+
+/* ÁREA CENTRAL DA DIREITA */
+.main-content {
+  flex: 1;
+  background-color: #f8fafc; /* Cinza claro de fundo */
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background-color: white;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: right;
+  font-weight: bold;
+  color: #334155;
+}
+
+.conteudo-dinamico {
+  padding: 30px;
+  flex: 1;
+  overflow-y: auto; /* Se a tabela for grande, cria barra de rolagem só no meio */
+}

@@ -1,0 +1,32 @@
+<div class="ocorrencia-container">
+  <div class="header-tela">
+    <h2>📋 Registro de Ocorrências</h2>
+    <p>Monitoramento e controle de incidentes do Ceresp</p>
+  </div>
+
+  <div class="tabela-wrapper">
+    <table class="tabela-sistema">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Data do Registro</th>
+          <th>Descrição do Incidente</th>
+          <th>ID Tipo</th>
+          <th>ID Condenação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ocorrencia of listaOcorrencias">
+          <td>#{{ ocorrencia.id }}</td>
+          <td>{{ ocorrencia.dataRegistro | date:'dd/MM/yyyy HH:mm' }}</td>
+          <td class="coluna-descricao">{{ ocorrencia.descricao }}</td>
+          <td><span class="badge-info">{{ ocorrencia.tipoId }}</span></td>
+          <td><span class="badge-link">#{{ ocorrencia.condenacaoId }}</span></td>
+        </tr>
+        <tr *ngIf="listaOcorrencias.length === 0">
+          <td colspan="5" class="sem-dados">Nenhuma ocorrência registrada no momento.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

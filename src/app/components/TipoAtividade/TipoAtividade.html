@@ -1,0 +1,27 @@
+<div class="tipo-atividade-container">
+  <div class="header-tela">
+    <h2>⚙️ Configuração: Tipos de Atividades</h2>
+    <p>Gerenciamento de oficinas, estudos e trabalhos ativos no Ceresp</p>
+  </div>
+
+  <div class="tabela-wrapper">
+    <table class="tabela-sistema">
+      <thead>
+        <tr>
+          <th>Código (ID)</th>
+          <th>Classificação da Atividade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tipo of listaTipos">
+          <td>#{{ tipo.id }}</td>
+          <td class="coluna-nome">{{ tipo.nome }}</td>
+        </tr>
+        
+        <tr *ngIf="listaTipos.length === 0">
+          <td colspan="2" class="sem-dados">Nenhum tipo de atividade cadastrado no banco.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

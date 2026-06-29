@@ -1,0 +1,50 @@
+<div class="sidebar-container">
+  <div class="sidebar-header">
+    <span class="logo-icone">CR</span>
+    <div class="logo-texto">
+      <h3>CERESP</h3>
+      <p>Painel Digital</p>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav" aria-label="Menu principal">
+    <div class="menu-categoria">Controle de Detentos</div>
+
+    <a
+      routerLink="/condenacoes"
+      routerLinkActive="active"
+      class="menu-item"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <span class="item-icone">CN</span>
+      <span>Condenacoes</span>
+    </a>
+
+    <a
+      routerLink="/ocorrencias"
+      routerLinkActive="active"
+      class="menu-item"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <span class="item-icone">OC</span>
+      <span>Ocorrencias</span>
+    </a>
+
+    <div class="menu-categoria">Configuracoes</div>
+
+    <a
+      routerLink="/tipos-atividade"
+      routerLinkActive="active"
+      class="menu-item"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <span class="item-icone">TA</span>
+      <span>Tipos de Atividade</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <span class="usuario-status"></span>
+    <span>Corpo Guarda Online</span>
+  </div>
+</div>

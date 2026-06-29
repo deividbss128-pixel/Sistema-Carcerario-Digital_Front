@@ -1,0 +1,35 @@
+<div class="page-header">
+  <h2>Histórico de Condenações - CERESP</h2>
+  <button class="btn-cadastro">+ Registrar Nova Condenação</button>
+</div>
+
+<table class="tabela-presidio">
+  <thead>
+    <tr>
+      <th>Descrição do Crime</th>
+      <th>Data de Entrada</th>
+      <th>Previsão de Saída</th>
+      <th>ID do Detento</th>
+      <th>Situação Atual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="listaCondenacoes.length === 0">
+      <td colspan="5" style="text-align: center; color: #64748b;">
+        Nenhuma condenação encontrada no banco de dados.
+      </td>
+    </tr>
+
+    <tr *ngFor="let cond of listaCondenacoes">
+      <td><strong>{{ cond.descricao }}</strong></td>
+      <td>{{ cond.dataEntrada | date:'dd/MM/yyyy HH:mm' }}</td>
+      <td>{{ cond.dataSaida | date:'dd/MM/yyyy HH:mm' }}</td>
+      <td><span class="codigo-id">{{ cond.pessoaId }}</span></td>
+      <td>
+        <span class="badge" [ngClass]="cond.situacao === 'RECLUSO' ? 'vermelho' : 'azul'">
+          {{ cond.situacao }}
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
